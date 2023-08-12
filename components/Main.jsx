@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Landing from './Pages/Landing'
 import Socials from './Pages/Socials'
 import Headbar from './Pages/Headbar'
-import Carousel from './Pages/Carousel'
+import Carousel from './Pages/TechStacks/Carousel'
 
 function Main() {
   return (
