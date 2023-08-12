@@ -36,3 +36,13 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+.paragraphs {
+
+}
+
+.tooltip {
+  @apply absolute p-2 mt-24 rounded-md
+  text-white bg-gray-900 font-serif
+  transition-all duration-150 scale-0 origin-top
+}

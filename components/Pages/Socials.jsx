@@ -6,7 +6,7 @@ function Socials() {
 
   return (
     <div className='border-r-4 absolute grid border-tan'>
-    <button className='mt-2 transition duration-150 hover:scale-150'>
+    <button className='mt-2 duration-150 hover:scale-150'>
     <Image
       src='/linkin.png'
       width={50}
