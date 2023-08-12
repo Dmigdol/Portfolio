@@ -38,7 +38,7 @@ button {
 }
 
 .paragraphs {
-
+  @apply text-golden mx-6
 }
 
 .tooltip {
