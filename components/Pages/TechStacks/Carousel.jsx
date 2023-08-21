@@ -5,13 +5,16 @@ import info from './Techinfo.js'
 
 function Techcarousel() {
   return (
-    <div className='border-y-2 border-tan flex justify-center'>
-      {Object.entries(info).map((item) => (
-        <Crslrender
-        tech={item}
-        />
-      ))}
-    </div>
+    Object.entries(info).map((item) => (
+      <div className='border-y-2 border-tan flex justify-center'>
+        {console.log(item)}
+        {Object.entries(item[1]).map((sub) => (
+          <Crslrender
+          tech={sub}
+          />
+        ))}
+      </div>
+    ))
 
   )
 }
