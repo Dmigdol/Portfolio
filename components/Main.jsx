@@ -8,7 +8,7 @@ import Projects from './Pages/Projects/Projects'
 
 function Main() {
   return (
-    <div id="Main" className="bg-offwhite bg-gradient-to-b from-peach to-white flex-wrap h-screen">
+    <div id="Main" className="bg-offwhite bg-gradient-to-b from-peach via-white to-peach flex-wrap">
       <Headbar />
       <Socials />
       <Landing />

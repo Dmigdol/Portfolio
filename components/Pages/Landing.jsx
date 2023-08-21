@@ -17,8 +17,8 @@ function Landing() {
     <div className="mx-24 relative h-full w-1/3">
     <Image
       src="/d1.png"
-      layout='fill'
-      objectFit='contain'
+      width='2000'
+      height='2000'
     />
     <div className="flex justify-center">
     <FontAwesomeIcon icon="fa-brands fa-linkedin" />
