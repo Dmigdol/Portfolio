@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 function Landing() {
   return (
-  <div className="Landing-Base inline-flex h-1/3 w-screen border-yellow-400 mt-14 font-serif text-golden">
+  <div className="Landing-Base border-b-2 inline-flex h-1/3 w-screen border-tan mt-14 font-serif text-golden">
     <div className="mx-24 relative h-full w-1/3">
     <Image
       src="/d1.png"

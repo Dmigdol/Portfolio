@@ -3,7 +3,8 @@ import Landing from './Pages/Landing'
 import Socials from './Pages/Socials'
 import Headbar from './Pages/Headbar'
 import Carousel from './Pages/TechStacks/Carousel'
-import AbtMe from './Pages/Paragraphs'
+import AbtMe from './Pages/Paragraphs/Paragraphs'
+import Projects from './Pages/Projects/Projects'
 
 function Main() {
   return (
@@ -13,6 +14,7 @@ function Main() {
       <Landing />
       <Carousel />
       <AbtMe />
+      <Projects />
     </div>
   )
 
