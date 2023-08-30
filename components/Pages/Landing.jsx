@@ -27,7 +27,8 @@ function Landing() {
     <div className="Text-Landing h-full w-2/3">
       <p className='text-3xl text-center pt-8'>Software Engineer</p>
       <p className='text-4xl text-center pt-2'>Dillon Migdol</p>
-      <p className='text-lg text-ri pl-5 pt-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p className='text-lg text-ri pl-5 pt-1'>Hello and welcome to my portfolio website! I am a fullstack software engineer who is always
+       open to new opportunities. Please reach out to me via email or LinkedIn if you want to chat :)</p>
     </div>
   </div>
   )
