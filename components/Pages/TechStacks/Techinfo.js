@@ -1,7 +1,7 @@
 let info = {
   frontEnd : {
-    'React': '/TechThumbnails/node-js.png',
-    'React Native': '/TechThumbnails/node-js.png',
+    'React': '/TechThumbnails/react.png',
+    'React Native': '/TechThumbnails/reactnative.png',
     'Tailwind': '/TechThumbnails/tailwind.png',
 
   },
@@ -13,10 +13,10 @@ let info = {
   },
   devTools: {
     'Amazon Web Services': '/TechThumbnails/aws2.png',
-    'Jest': '/TechThumbnails/aws2.png',
-    'Trello': '/TechThumbnails/aws2.png',
-    'Github': '/TechThumbnails/aws2.png',
-    'Webpack': '/TechThumbnails/aws2.png',
+    'Jest': '/TechThumbnails/jest.png',
+    'Trello': '/TechThumbnails/trello.png',
+    'Github': '/TechThumbnails/github-logo.png',
+    'Webpack': '/TechThumbnails/webpack.png',
   }
 
 }
