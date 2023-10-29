@@ -48,3 +48,10 @@ button {
   text-white bg-gray-900 font-serif
   transition-all duration-150 scale-0 origin-top
 }
+
+.modalBackground {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

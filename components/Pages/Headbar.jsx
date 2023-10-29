@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Headbar() {
   return(
     <div>
-      <FontAwesomeIcon icon="fa-solid fa-arrow-up" />
     </div>
   )
 }
