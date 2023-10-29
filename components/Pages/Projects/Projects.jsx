@@ -15,8 +15,7 @@ function Projects({ setOpenModal }) {
         <h1 className='paragraphs w-screen'>
           <div>
             <p className='m-5 text-2xl'
-            onClick={() => {setOpenModal(true); document.body.style.overflow = "hidden"
-          }}
+            onClick={() => {setOpenModal(true); document.body.style.overflow = "hidden"}}
             >{item[0]}</p>
         </div>
       </h1>
