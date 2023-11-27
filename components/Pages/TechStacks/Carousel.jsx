@@ -5,12 +5,10 @@ import info from './Techinfo.js'
 
 function Techcarousel() {
   return (
-    Object.entries(info).map((item) => (
-      <div>
-        <header className='text-center paragraphs text-2xl'>
-          {item[0]}
-        </header>
-        <carousel className='border-tan items-center flex justify-center'>
+    <div className='triangle w-1/2 pb-14'>
+    {Object.entries(info).map((item) => (
+      <div className='bg-blue-200'>
+        <carousel className='border-tan items-center flex'>
           {Object.entries(item[1]).map((sub) => (
             <Crslrender
             tech={sub}
@@ -18,7 +16,8 @@ function Techcarousel() {
           ))}
         </carousel>
       </div>
-    ))
+    ))}
+    </div>
 
   )
 }

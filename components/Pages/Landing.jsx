@@ -13,17 +13,7 @@ import Image from 'next/image'
 
 function Landing() {
   return (
-  <div className="Landing-Base border-b-2 inline-flex h-1/3 w-screen border-tan mt-14 font-serif text-golden">
-    <div className="mx-24 relative h-full w-1/3">
-    <Image
-      src="/d1.png"
-      width='2000'
-      height='2000'
-    />
-    <div className="flex justify-center">
-    <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-    </div>
-    </div>
+  <div className="Landing-Base flex m-auto justify-center text-center border-t-2 border-b-2 h-1/3 w-2/3 border-tan pb-8 mt-14 font-serif text-golden">
     <div className="Text-Landing h-full w-2/3">
       <p className='text-3xl text-center pt-8'>Software Engineer</p>
       <p className='text-4xl text-center pt-2'>Dillon Migdol</p>
@@ -41,3 +31,11 @@ const dillStyle = {
 }
 
 export default Landing;
+
+/* Picture <Image
+      src="/d1.png"
+      width='2000'
+      height='2000'
+    />
+
+    */

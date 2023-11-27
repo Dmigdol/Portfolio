@@ -6,7 +6,7 @@ import Modal from './Modal.js'
 function Projects({ setOpenModal }) {
 
   return (
-    <div className='text-center relative'>
+    <div className='text-center'>
       <header className='mt-4 paragraphs text-3xl'>
         Projects
       </header>

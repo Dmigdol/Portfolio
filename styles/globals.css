@@ -43,6 +43,10 @@ button {
   @apply text-golden mx-6
 }
 
+.triangle {
+  clip-path: polygon(0% 100%, 0% 0%, 60% 0%, 90% 70%, 90% 100%);
+}
+
 .tooltip {
   @apply absolute p-2 mt-24 rounded-md
   text-white bg-gray-900 font-serif
