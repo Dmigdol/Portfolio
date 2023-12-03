@@ -5,9 +5,9 @@ import info from './Techinfo.js'
 
 function Techcarousel() {
   return (
-    <div className='triangle w-1/2 pb-14'>
+    <div className='triangle pb-14'>
     {Object.entries(info).map((item) => (
-      <div className='bg-blue-200'>
+      <div className='bg-gradient-to-r from-orange-400'>
         <carousel className='border-tan items-center flex'>
           {Object.entries(item[1]).map((sub) => (
             <Crslrender

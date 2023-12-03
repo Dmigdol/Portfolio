@@ -44,7 +44,7 @@ button {
 }
 
 .triangle {
-  clip-path: polygon(0% 100%, 0% 0%, 60% 0%, 90% 70%, 90% 100%);
+  clip-path: polygon(0% 100%, 0% 0%, 33% 0%, 66% 100%);
 }
 
 .tooltip {

@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 function Crender({tech}) {
   return (
-    <div className='text-center grid justify-items-center group'>
+    <div className='text-center grid px-2 justify-items-center group'>
       <Image
-      className="m-5 duration-150 group-hover:scale-150 "
+      className="m-5 ml-10 duration-150 group-hover:scale-150 "
       src={tech[1]}
-      width={75}
-      height={75}
+      width={80}
+      height={80}
       />
       <span className="tooltip group-hover:scale-100">{tech[0]}</span>
     </div>
