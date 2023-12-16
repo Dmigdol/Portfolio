@@ -5,7 +5,7 @@ import info from './Techinfo.js'
 
 function Techcarousel() {
   return (
-    <div className='triangle pb-14'>
+    <div className='triangle w-2/3 pb-14'>
     {Object.entries(info).map((item) => (
       <div className='bg-gradient-to-r from-orange-400'>
         <carousel className='border-tan items-center flex'>
@@ -17,8 +17,10 @@ function Techcarousel() {
         </carousel>
       </div>
     ))}
+      <div className='flex'>
+            here
+      </div>
     </div>
-
   )
 }
 
