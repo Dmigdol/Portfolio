@@ -40,7 +40,7 @@ button {
 }
 
 .paragraphs {
-  @apply text-golden mx-6
+  @apply text-golden mx-6 font-serif
 }
 
 .triangle {
