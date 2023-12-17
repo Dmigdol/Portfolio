@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Image from 'next/image'
 import Crslrender from './Crslrender'
 import info from './Techinfo.js'
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 
 function Techcarousel() {
 
@@ -9,7 +11,8 @@ function Techcarousel() {
     // Function will read the name of the Technology and use that reference to change link when clicked
 
     function onTechClick(techName) {
-
+      <Link to={techName}>
+      </Link>
     }
 
   return (
