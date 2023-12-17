@@ -4,6 +4,14 @@ import Crslrender from './Crslrender'
 import info from './Techinfo.js'
 
 function Techcarousel() {
+
+  // Function that each Tech node may reference
+    // Function will read the name of the Technology and use that reference to change link when clicked
+
+    function onTechClick(techName) {
+
+    }
+
   return (
     <div className='container'>
       <span className='float-right pt-20 paragraphs text-right text- text-7xl'> Technological <br/> Skills</span>
