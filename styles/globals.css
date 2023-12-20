@@ -47,6 +47,10 @@ button {
   clip-path: polygon(0% 100%, 0% 0%, 50% 0%, 100% 100%);
 }
 
+.revtriangle {
+  clip-path: polygon(0% 100%, 50% 0%, 100% 0%, 100% 100%);
+}
+
 .tooltip {
   @apply absolute p-2 mt-24 rounded-md
   text-white bg-gray-900 font-serif
