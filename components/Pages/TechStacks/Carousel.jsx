@@ -2,18 +2,12 @@ import React, {useState, useEffect} from 'react';
 import Image from 'next/image'
 import Crslrender from './Crslrender'
 import info from './Techinfo.js'
-import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 function Techcarousel() {
 
   // Function that each Tech node may reference
     // Function will read the name of the Technology and use that reference to change link when clicked
-
-    function onTechClick(techName) {
-      <Link to={techName}>
-      </Link>
-    }
 
   return (
     <div className='container'>
@@ -30,12 +24,12 @@ function Techcarousel() {
           </carousel>
         </div>
       ))}
+        <span className='ml-64 font-serif text-golden'>
+        Click an icon to check it out!
+        </span>
       </div>
     </div>
   )
 }
 
 export default Techcarousel;
-
-
-// perhaps add a closing div behind tech stacks text
