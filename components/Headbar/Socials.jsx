@@ -13,9 +13,12 @@ function Socials() {
           src={item[1][0]}
           width={50}
           height={50}
-          onClick={()=> window.open(item[1][1], "_blank")}
+          onClick={()=>
+            item[0] !== 'Email' ?
+              window.open(item[1][1], "_blank")
+            : navigator.clipboard.writeText(item[1][1])
+          }
           />
-          {console.log(item)}
         </div>
       ))}
     </div>
