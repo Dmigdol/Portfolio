@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Landing from './Pages/Landing'
-import Headbar from './Pages/Headbar'
+import Headbar from './Headbar/Headbar'
 import Carousel from './Pages/TechStacks/Carousel'
 import AbtMe from './Pages/Paragraphs/Paragraphs'
 import Projects from './Pages/Projects/Projects'

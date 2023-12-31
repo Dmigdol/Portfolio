@@ -25,7 +25,7 @@ function Techcarousel() {
         </div>
       ))}
         <span className='ml-64 font-serif text-golden'>
-        Click an icon to check it out!
+        Dont Recognize one? Click an icon to check it out!
         </span>
       </div>
     </div>
