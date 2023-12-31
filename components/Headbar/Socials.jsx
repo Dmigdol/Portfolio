@@ -6,34 +6,18 @@ import socials from './SocialsInfo'
 function Socials() {
 
   return (
-    <div className='border-tan'>
+    <div className='border-tan flex justify-center'>
       {Object.entries(socials).map((item) => (
-        <div>
-          here
+        <div className='mt-2 duration-150 px-2 pt-3 hover:scale-150'>
+          <Image
+          src={item[1][0]}
+          width={50}
+          height={50}
+          onClick={()=> window.open(item[1][1], "_blank")}
+          />
+          {console.log(item)}
         </div>
       ))}
-    <button className='mt-2 duration-150 hover:scale-150'>
-    <Image
-      src='/linkin.png'
-      width={50}
-      height={50}
-      />
-    </button>
-    <button className='mt-2 pt-2 duration-150 hover:scale-150'>
-      <Image
-      src='/github-logo.png'
-      width={50}
-      height={50}
-      />
-    </button>
-    <button className='mt-2 pt-2 duration-150 hover:scale-150'>
-    <Image
-      src='/email.png'
-      width={50}
-      height={50}
-      />
-    </button>
-
     </div>
   )
 }
