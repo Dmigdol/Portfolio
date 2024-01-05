@@ -43,6 +43,10 @@ button {
   @apply text-golden mx-6 font-serif
 }
 
+.paragraphsBl {
+  @apply text-black mx-6 font-serif
+}
+
 .triangle {
   clip-path: polygon(0% 100%, 0% 0%, 50% 0%, 100% 100%);
 }

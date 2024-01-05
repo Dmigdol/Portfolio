@@ -7,12 +7,12 @@ function Projects({ setOpenModal }) {
 
   return (
     <div className='text-center'>
-      <header className='mt-4 paragraphs text-3xl'>
+      <header className='mt-4 paragraphsBl text-3xl'>
         Projects
       </header>
-      <div className='flex'>
+      <div className='flex border-2 mx-24 bg-orange-400'>
       {Object.entries(PjInfo).map((item) => (
-        <h1 className='paragraphs w-screen'>
+        <h1 className='paragraphsBl w-screen'>
           <div>
             <p className='m-5 text-2xl'
             onClick={() => {setOpenModal(true); document.body.style.overflow = "hidden"}}
