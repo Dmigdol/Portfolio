@@ -4,7 +4,7 @@ import Socials from './Socials'
 
 function Headbar() {
   return(
-    <div className='bg-orange-400 py-2 font-serif text-center'>
+    <div className='bg-gradient-to-b from-orange-400 to-white py-1 font-serif text-center'>
       <span className='text-center text-2xl'> Contact me </span>
       <Socials />
     </div>

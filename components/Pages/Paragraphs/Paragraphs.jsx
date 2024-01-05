@@ -9,14 +9,14 @@ function abtMe() {
           <div className='tricontainer'>
             {item[0] === 'Experience' ?
             <div>
-              <div className='text-right w-1/3 h-max float-right border-2 pr-9'>
+              <div className='text-right w-1/3 h-max float-right pr-9'>
                 {item[0]}
               </div>
               <p className='m-8 text-2xl w-2/4'>{item[1]}</p>
             </div>
             :
             <div>
-              <div className='pl-9 border-2 w-1/4 float-left'>
+              <div className='pl-9 w-1/4 float-left'>
                 {item[0]}
               </div>
               <p className='m-8 text-2xl w-2/4 float-right'>{item[1]}</p>
