@@ -7,7 +7,7 @@ function Projects({ setOpenModal }) {
 
   return (
     <div className='text-center'>
-      <header className='mt-4 paragraphsBl text-3xl'>
+      <header className='my-4 paragraphs text-7xl'>
         Projects
       </header>
       <div className='flex border-2 mx-24 bg-orange-400'>

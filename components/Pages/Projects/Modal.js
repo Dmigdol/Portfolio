@@ -6,12 +6,11 @@ import Image from 'next/image'
 function Modal({pInfo, closeModal}) {
 
   return(
-
-  <div className='modalBackground bg-offwhite border-2 rounded
+  <div className='modalBackground bg-white border-2 border-orange-400 rounded
   w-5/6 h-5/6
   '>
     <div className='modalContainer'>
-      <div className='title paragraphs mt-5 text-center text-4xl'>Title</div>
+      <div className='title paragraphs pb-8 mt-5 text-center text-5xl'>Title</div>
       <div className='closeBtn absolute right-0 top-0 text-golden text-4xl'>
         <button
         onClick={() => {closeModal(false); document.body.style.overflow = "visible"
@@ -27,10 +26,12 @@ function Modal({pInfo, closeModal}) {
               </vid>
       </div>
       <div className='border-2 w-3/5 mx-auto mt-7'>
-        <p className='body m-0 break-words'>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
+        <p className='body m-0 break-words'>
+          Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+        </p>
       </div>
       <span className='Stack absolute float-left left-8 bottom-9 text-xl'>Tech Stack : </span>
-      <button className='mt-2 duration-150 hover:scale-150'
+      <button className='mt-2 absolute right-4 bottom-4 duration-150 hover:scale-150'
       to='https://www.google.com'
       target='_blank'>
     <Image
