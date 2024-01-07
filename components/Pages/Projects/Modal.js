@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player/lazy'
 import Image from 'next/image'
+import PjInfo from './Pjinfo.js'
 
 
-function Modal({pInfo, closeModal}) {
+function Modal({closeModal, currentModal}) {
+
+  console.log(currentModal)
 
   return(
   <div className='modalBackground bg-white border-2 border-orange-400 rounded
@@ -20,7 +23,7 @@ function Modal({pInfo, closeModal}) {
       <div className='videoContainer flex justify-center'>
         <vid className='video'>
                 <ReactPlayer
-                url='https://www.youtube.com/watch?v=_gF21Jimxi0'
+                url={currentModal[1].videoUrl}
                 height='270px'
                 width='480px'/>
               </vid>
@@ -38,6 +41,7 @@ function Modal({pInfo, closeModal}) {
       src='/github-logo.png'
       width={50}
       height={50}
+      onClick={() => (window.open(currentModal[1].githubUrl, "_blank"))}
       />
     </button>
     </div>

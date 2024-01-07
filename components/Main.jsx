@@ -9,15 +9,16 @@ import Modal from './Pages/Projects/Modal.js'
 function Main() {
 
   const [videoModal, setOpenModal] = useState(false);
+  const [currentModal, setCurrentModal] = useState('none')
 
   return (
     <div id="Main" className="flex-wrap">
-      {videoModal && <Modal closeModal={setOpenModal}/>}
+      {videoModal && <Modal closeModal={setOpenModal} currentModal={currentModal}/>}
       <Headbar />
       <Landing />
       <Carousel />
       <AbtMe />
-      <Projects setOpenModal={setOpenModal}/>
+      <Projects setOpenModal={setOpenModal} setCurrentModal={setCurrentModal}/>
     </div>
   )
 

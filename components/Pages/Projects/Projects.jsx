@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player/lazy'
 import PjInfo from './Pjinfo.js'
 import Modal from './Modal.js'
 
-function Projects({ setOpenModal }) {
+function Projects({ setOpenModal, setCurrentModal }) {
 
   return (
     <div className='text-center'>
@@ -15,9 +15,9 @@ function Projects({ setOpenModal }) {
         <h1 className='paragraphsBl w-screen'>
           <div>
             <p className='m-5 text-2xl'
-            onClick={() => {setOpenModal(true); document.body.style.overflow = "hidden"}}
+            onClick={() => {setOpenModal(true); setCurrentModal(item); document.body.style.overflow = "hidden"}}
             >{item[0]}</p>
-        </div>
+          </div>
       </h1>
       ))}
     </div>
@@ -25,6 +25,10 @@ function Projects({ setOpenModal }) {
   )
 }
 export default Projects;
+
+
+
+
 
 
 /*
