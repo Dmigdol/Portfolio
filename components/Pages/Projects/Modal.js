@@ -3,11 +3,32 @@ import ReactPlayer from 'react-player/lazy'
 import Image from 'next/image'
 import PjInfo from './Pjinfo.js'
 import AliceCarousel from "react-alice-carousel";
+import {useState} from 'react';
 
 
 function Modal({closeModal, currentModal}) {
 
-  console.log(currentModal)
+  const [imgIndex, setImgIndex] = useState(0);
+  const images = []
+
+  currentModal[1].media.forEach((img) => {
+    images.push(
+      <div className='carouselImg'>
+        <img src={img} className='media'/>
+      </div>
+      )
+  })
+
+console.log(images)
+
+  const slideChange = (context) => {
+    context === forward ?
+      imgIndex < currentModal[1].media.length ?
+        setImgIndex(imgIndex + 1) : setImgIndex(imgIndex)
+    : imgIndex > 0 ?
+        setImgIndex(imgIndex - 1) : setImgIndex(imgIndex)
+  }
+
 
   return(
   <div className='modalBackground bg-white border-2 border-orange-400 rounded
@@ -22,12 +43,12 @@ function Modal({closeModal, currentModal}) {
         > &times; </button>
       </div>
       <div className='videoContainer flex justify-center'>
-        <vid className='video'>
-                <ReactPlayer
-                url={currentModal[1].videoUrl}
-                height='270px'
-                width='480px'/>
-              </vid>
+        <AliceCarousel
+          activeIndex={imgIndex}
+          disableDotsControls
+          disableButtonsControls
+          items={images}
+        />
       </div>
       <div className='border-2 w-3/5 mx-auto mt-7'>
         <p className='body m-0 break-words'>
@@ -52,3 +73,14 @@ function Modal({closeModal, currentModal}) {
 }
 
 export default Modal;
+
+
+/*  old video container
+        <vid className='video'>
+                <ReactPlayer
+                url={currentModal[1].videoUrl}
+                height='270px'
+                width='480px'/>
+              </vid>
+
+*/
