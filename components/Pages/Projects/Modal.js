@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player/lazy'
 import Image from 'next/image'
 import PjInfo from './Pjinfo.js'
+import AliceCarousel from "react-alice-carousel";
 
 
 function Modal({closeModal, currentModal}) {
