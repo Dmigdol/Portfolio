@@ -62,8 +62,8 @@ button {
   transition-all duration-150 scale-0 origin-top
 }
 
-.alice {
-  display: flex;
+.alice-carousel__stage-item {
+  @apply flex
 }
 
 .modalBackground {

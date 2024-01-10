@@ -4,6 +4,8 @@ import Image from 'next/image'
 import PjInfo from './Pjinfo.js'
 import AliceCarousel from "react-alice-carousel";
 import {useState} from 'react';
+import "react-alice-carousel/lib/alice-carousel.css";
+
 
 
 function Modal({closeModal, currentModal}) {
@@ -19,7 +21,7 @@ function Modal({closeModal, currentModal}) {
       )
   })
 
-console.log(images)
+console.log('here ****** ' + images)
 
   const slideChange = (context) => {
     context === forward ?
@@ -29,20 +31,21 @@ console.log(images)
         setImgIndex(imgIndex - 1) : setImgIndex(imgIndex)
   }
 
+  console.log(imgIndex)
 
   return(
   <div className='modalBackground bg-white border-2 border-orange-400 rounded
   w-5/6 h-5/6
   '>
     <div className='modalContainer'>
-      <div className='title paragraphs pb-8 mt-5 text-center text-5xl'>{currentModal[1].Title}</div>
+      <div className='title paragraphs float-right pb-8 mt-5 text-5xl'>{currentModal[1].Title}</div>
       <div className='closeBtn absolute right-0 top-0 text-golden text-4xl'>
         <button
         onClick={() => {closeModal(false); document.body.style.overflow = "visible"
       }}
         > &times; </button>
       </div>
-      <div className='videoContainer border-2'>
+      <div className='videoContainer w-1/4 border-2'>
         <AliceCarousel
         className='alice'
           activeIndex={imgIndex}
