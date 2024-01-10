@@ -42,8 +42,9 @@ console.log(images)
       }}
         > &times; </button>
       </div>
-      <div className='videoContainer flex justify-center'>
+      <div className='videoContainer border-2'>
         <AliceCarousel
+        className='alice'
           activeIndex={imgIndex}
           disableDotsControls
           disableButtonsControls
